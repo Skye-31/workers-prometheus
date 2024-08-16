@@ -1,0 +1,10 @@
+{
+	"compilerOptions": {
+		"lib": ["es2022"],
+		"module": "es2022",
+		"moduleResolution": "Bundler",
+		"types": ["@cloudflare/workers-types/2023-07-01"],
+		"skipLibCheck": true,
+		"strict": true
+	}
+}

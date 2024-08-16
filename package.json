@@ -1,0 +1,13 @@
+{
+	"name": "workers-prometheus-root",
+	"private": true,
+	"scripts": {
+		"format": "prettier . --write"
+	},
+	"devDependencies": {
+		"@ianvs/prettier-plugin-sort-imports": "^4.3.1",
+		"prettier": "^3.3.3",
+		"prettier-plugin-packagejson": "^2.5.1",
+		"typescript": "^5.5.4"
+	}
+}

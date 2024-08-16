@@ -1,0 +1,35 @@
+{
+	"name": "workers-prometheus",
+	"version": "0.0.2",
+	"description": "A Cloudflare Workers prometheus exporter powered by Durable Objects & RPC",
+	"keywords": [
+		"cloudflare",
+		"workers",
+		"prometheus",
+		"durable objects"
+	],
+	"license": "Apache 2.0",
+	"author": "skye31",
+	"type": "module",
+	"exports": {
+		"./client": {
+			"types": "./dist/client/index.d.ts",
+			"import": "./dist/client/index.js"
+		},
+		"./server": {
+			"types": "./dist/server/index.d.ts",
+			"import": "./dist/server/index.js"
+		}
+	},
+	"scripts": {
+		"build": "tsc",
+		"dev": "tsc --watch",
+		"prepublishOnly": "cp ../README.md README.md && tsc"
+	},
+	"dependencies": {
+		"promjs": "^0.4.2"
+	},
+	"devDependencies": {
+		"@cloudflare/workers-types": "^4.20240815.0"
+	}
+}

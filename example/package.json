@@ -1,0 +1,12 @@
+{
+	"name": "workers-prometheus-example",
+	"private": true,
+	"scripts": {
+		"dev": "wrangler dev"
+	},
+	"devDependencies": {
+		"@cloudflare/workers-types": "^4.20240815.0",
+		"workers-prometheus": "workspace:*",
+		"wrangler": "^3.72.0"
+	}
+}
