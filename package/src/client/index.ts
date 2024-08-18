@@ -107,13 +107,16 @@ class GaugeImpl extends CounterImpl implements Gauge {
 	type = 'gauge' as const;
 
 	dec(labels?: Labels) {
-		const gauge = this.getSelf('gauge');
+		const gauge = this.getSelf(this.type);
 		this.waitUntil(gauge.dec(labels));
 
 		return this;
 	}
 	sub(amount: number, labels?: Labels) {
-		throw new Error('Method not implemented.');
+		const gauge = this.getSelf(this.type);
+		this.waitUntil(gauge.sub(amount, labels));
+
+		return this;
 	}
 }
 

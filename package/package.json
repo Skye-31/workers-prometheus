@@ -1,6 +1,6 @@
 {
 	"name": "workers-prometheus",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "A Cloudflare Workers prometheus exporter powered by Durable Objects & RPC",
 	"keywords": [
 		"cloudflare",
