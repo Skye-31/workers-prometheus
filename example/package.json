@@ -7,6 +7,6 @@
 	"devDependencies": {
 		"@cloudflare/workers-types": "^4.20240815.0",
 		"workers-prometheus": "workspace:*",
-		"wrangler": "^3.72.0"
+		"wrangler": "^4.104.0"
 	}
 }
